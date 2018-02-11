@@ -1,8 +1,8 @@
-import { render } from "preact";
-import Messages from "./messages";
-import { Provider } from "unistore/preact";
-import { store } from "./store";
-import "tachyons";
+import { render } from 'preact'
+import Messages from './messages'
+import { Provider } from 'unistore/preact'
+import { store } from './store'
+import 'tachyons'
 
 const App = () => (
   <Provider store={store}>
@@ -11,10 +11,10 @@ const App = () => (
       <Messages />
     </div>
   </Provider>
-);
+)
 
-export default App;
+export default App
 
-if (typeof window !== "undefined") {
-  render(<App />, document.getElementById("root"));
+if (typeof window !== 'undefined') {
+  render(<App />, document.getElementById('root'))
 }

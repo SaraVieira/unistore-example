@@ -1,8 +1,8 @@
-import React from "react";
-import { connect } from "unistore/preact";
-import { actions } from "./store";
+import React from 'react'
+import { connect } from 'unistore/preact'
+import { actions } from './store'
 
-export default connect(["messages", "current"], actions)(
+export default connect(['messages', 'current'], actions)(
   ({ messages, current, add, change, remove }) => (
     <div className="messages">
       <form className="pv4 black-80" onSubmit={add}>
@@ -24,7 +24,7 @@ export default connect(["messages", "current"], actions)(
             key={i}
             class="helvetica flex justify-between lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30"
           >
-            {m}{" "}
+            {m}{' '}
             <button
               class="bn f6 link dim br1 ph3 pv1 mb2 dib white bg-red"
               onClick={() => remove(m)}
@@ -36,4 +36,4 @@ export default connect(["messages", "current"], actions)(
       </ul>
     </div>
   )
-);
+)

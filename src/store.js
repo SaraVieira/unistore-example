@@ -1,11 +1,11 @@
-import createStore from "unistore";
+import createStore from 'unistore'
 
-export let store = createStore({ messages: [], current: "" });
+export let store = createStore({ messages: [], current: '' })
 
 export let actions = store => ({
   add: ({ messages, current }, e) => {
-    e.preventDefault();
-    return { messages: messages.concat(current), current: "" };
+    e.preventDefault()
+    return { messages: messages.concat(current), current: '' }
   },
 
   remove: ({ messages, state }, message) => ({
@@ -17,6 +17,6 @@ export let actions = store => ({
     return {
       current: message,
       ...state
-    };
+    }
   }
-});
+})
