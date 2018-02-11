@@ -1,0 +1,14 @@
+{
+  "name": "unistore example",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://codesandbox.io/s/xl75oqvwoq",
+  "main": "index.js",
+  "dependencies": {
+    "preact": "8.2.5",
+    "preact-compat": "3.17.0",
+    "tachyons": "4.9.1",
+    "unistore": "3.0.4"
+  }
+}
